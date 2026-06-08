@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 58.2, "left": -29.4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -99.6,
+      "left": 13.4,
+      "attrs": { "color": "limegreen" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -99.6,
+      "left": 71,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -99.6,
+      "left": 128.6,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "led3:A", "uno:11", "green", [ "v0" ] ],
+    [ "led2:A", "uno:10", "green", [ "v0" ] ],
+    [ "led1:A", "uno:9", "green", [ "v0" ] ],
+    [ "led1:C", "uno:GND.3", "green", [ "v0" ] ],
+    [ "led2:C", "uno:GND.3", "green", [ "v0" ] ],
+    [ "led3:C", "uno:GND.3", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
